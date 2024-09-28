@@ -21,7 +21,7 @@ import re
 huggingface_bin_path = "/root/anaconda3/lib/python3.11/site-packages"
 os.environ["PATH"] = f"{huggingface_bin_path}:{os.environ['PATH']}"
 
-subprocess.run(["huggingface-cli", "login", "--token", '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'])
+subprocess.run(["huggingface-cli", "login", "--token", 'hf_rBIvOKVBOpXHAokVyWPusQygdsVdThA134'])
 
 def fetch_top_100_cryptos():
     url = "https://api.coingecko.com/api/v3/coins/markets"
@@ -239,7 +239,7 @@ def sentiment_analysis(content):
 
 
 telegram_token = '6467788089:AAEtl6sWveTLIP_cgJdliAS6l3wwUqXqrj8'  
-en_user_id = '-1002159719677'  
+en_user_id = '-1602149719671'  
 
 def send_message_to_user(message, flag='en'):
     max_message_length = 4096 
@@ -248,7 +248,7 @@ def send_message_to_user(message, flag='en'):
     if flag == 'en':
         chat_id = en_user_id
     elif flag == 'per': 
-        chat_id = "-1002231326721"
+        chat_id = "-2002231326723"
     else:
         return "Invalid flag"
 
